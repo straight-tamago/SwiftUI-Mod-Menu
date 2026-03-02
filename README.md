@@ -242,6 +242,16 @@ After `make package`, `after-package` in the Makefile automatically extracts `.d
 
 ---
 
+## Credits
+
+- Dobby: jmpews (`Apache-2.0`)
+  - https://github.com/jmpews/Dobby
+
+- HuyJIT-ModMenu: Huy Nguyen (34306) (`MIT`)
+  - https://github.com/34306
+
+---
+
 ## Contributing
 
 Contributions are very welcome.  
