@@ -1,0 +1,9 @@
+Package: com.straight-tamago.swiftui-mod-menu
+Name: SwiftUI_Mod_Menu
+Version: 1.0
+Architecture: iphoneos-arm
+Description: SwiftUI_Mod_Menu
+Maintainer: straight-tamago
+Author: straight-tamago
+Section: Tweaks
+Depends: mobilesubstrate
