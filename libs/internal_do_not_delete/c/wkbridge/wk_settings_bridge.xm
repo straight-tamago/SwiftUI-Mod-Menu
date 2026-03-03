@@ -1,9 +1,18 @@
 #import <Foundation/Foundation.h>
 #import "wk_settings_bridge.h"
 
-static NSString *WKSettingsPath(void) {
+static NSString *WKSettingsFolder(void) {
     NSString *dir = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES).firstObject;
-    return [dir stringByAppendingPathComponent:@"wk_settings.plist"];
+    NSString *folder = [dir stringByAppendingPathComponent:@"wk"];
+    NSFileManager *fm = [NSFileManager defaultManager];
+    if (![fm fileExistsAtPath:folder]) {
+        [fm createDirectoryAtPath:folder withIntermediateDirectories:YES attributes:nil error:NULL];
+    }
+    return folder;
+}
+
+static NSString *WKSettingsPath(void) {
+    return [WKSettingsFolder() stringByAppendingPathComponent:@"wk_settings.plist"];
 }
 
 static NSMutableDictionary *WKLoadSettings(void) {
