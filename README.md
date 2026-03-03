@@ -6,10 +6,17 @@ It provides draggable floating buttons/windows/overlays and settings UI componen
 
 ---
 
+## Screenshots
+
+![Dark (default)](img/IMG_1336.PNG)
+![pink](img/IMG_1335.PNG)
+![aqua](img/IMG_1337.PNG)
+---
+
 ## Features
 
 - Floating UI primitives (`WKFloatingButton`, `WKFloatingWindow`, `WKFloatingOverlay`)
-- 3 built-in themes (`Dark`, `Pastel`, `Aqua`)
+- 3 built-in themes (`Dark`, `Pink`, `Aqua`)
 - Persistent control values (`WKSettingsStore` + each control's `persist`)
 - Persistent position/size (`persistKey` + `WKPersistence`)
 - SwiftUI + Theos (rootless) setup
@@ -68,7 +75,7 @@ struct Main: View {
   - `fontName`: font name injected into `WKText`
 
 - `WKTheme`
-  - `dark`, `pastel`, `aqua`
+  - `dark`, `pink`, `aqua`
   - exposes `label` and `palette`
 
 - `WKThemePalette`
@@ -248,7 +255,7 @@ After `make package`, `after-package` in the Makefile automatically extracts `.d
   - https://github.com/jmpews/Dobby
 
 - HuyJIT-ModMenu: Huy Nguyen (34306) (`MIT`)
-  - https://github.com/34306
+  - https://github.com/34306/HuyJIT-ModMenu
 
 ---
 

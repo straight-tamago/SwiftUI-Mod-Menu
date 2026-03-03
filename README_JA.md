@@ -8,10 +8,18 @@ iOSアプリ上に SwiftUI ベースのフローティングUIを重ねて表示
 
 ---
 
+## スクリーンショット
+
+![ダーク](img/IMG_1335.PNG)
+![ピンク](img/IMG_1336.PNG)
+![アクア](img/IMG_1337.PNG)
+
+---
+
 ## 特徴
 
 - フローティングUI (`WKFloatingButton`, `WKFloatingWindow`, `WKFloatingOverlay`)
-- 3テーマ切替 (`Dark`, `Pastel`, `Aqua`)
+- 3テーマ切替 (`Dark`, `Pink`, `Aqua`)
 - 設定永続化（`WKSettingsStore` + 各コントロールの `persist`）
 - 位置/サイズ永続化（`persistKey` + `WKPersistence`）
 - SwiftUI + Theos 構成
@@ -70,7 +78,7 @@ struct Main: View {
   - `fontName`: `WKText` へ注入するフォント名
 
 - `WKTheme`
-  - `dark`, `pastel`, `aqua`
+  - `dark`, `pink`, `aqua`
   - `label`, `palette` を提供
 
 - `WKThemePalette`
@@ -250,7 +258,7 @@ make clean && make package
   - https://github.com/jmpews/Dobby
 
 - HuyJIT-ModMenu: Huy Nguyen (34306) (`MIT`)
-  - https://github.com/34306
+  - https://github.com/34306/HuyJIT-ModMenu
 
 ---
 
