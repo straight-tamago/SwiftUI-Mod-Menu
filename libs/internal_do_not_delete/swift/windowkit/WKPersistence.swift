@@ -10,7 +10,12 @@ enum WKPersistence {
     // MARK: Internal Helpers / 内部ヘルパー
 
     private static let dir: String = {
-        NSSearchPathForDirectoriesInDomains(.documentDirectory, .userDomainMask, true).first!
+        let base = NSSearchPathForDirectoriesInDomains(.documentDirectory, .userDomainMask, true).first!
+        let folder = (base as NSString).appendingPathComponent("wk")
+        if !FileManager.default.fileExists(atPath: folder) {
+            try? FileManager.default.createDirectory(atPath: folder, withIntermediateDirectories: true, attributes: nil)
+        }
+        return folder
     }()
 
     private static func path(_ key: String) -> String {
