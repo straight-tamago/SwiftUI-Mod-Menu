@@ -2,13 +2,13 @@ import SwiftUI
 
 public enum WKTheme: String, CaseIterable, Hashable {
     case dark
-    case pastel
+    case pink
     case aqua
 
     public var label: String {
         switch self {
         case .dark: return "Dark"
-        case .pastel: return "Pastel"
+        case .pink: return "Pink"
         case .aqua: return "Aqua"
         }
     }
@@ -16,7 +16,7 @@ public enum WKTheme: String, CaseIterable, Hashable {
     public var palette: WKThemePalette {
         switch self {
         case .dark: return .dark
-        case .pastel: return .pastel
+        case .pink: return .pink
         case .aqua: return .aqua
         }
     }
@@ -61,7 +61,7 @@ public struct WKThemePalette {
         settingsButtonFill: Color(red: 0.2, green: 0.4, blue: 0.8, opacity: 0.9)
     )
 
-    public static let pastel = WKThemePalette(
+    public static let pink = WKThemePalette(
         windowBg: Color(UIColor(red: 1.00, green: 0.94, blue: 0.96, alpha: 0.98)),
         windowBgTransparent: Color(UIColor(red: 1.00, green: 0.94, blue: 0.96, alpha: 0.35)),
         titleBarBg: Color(red: 0.96, green: 0.82, blue: 0.87),
