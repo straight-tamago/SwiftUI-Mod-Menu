@@ -83,14 +83,14 @@ struct Main: View {
 
 ### Floating UI
 
-- `WKFloatingButton` (`WKButton` is an alias)
+- `WKFloatingButton`
   - `init(size: CGFloat = 50, persistKey: String? = nil, defaultPosition: CGPoint? = nil, onTap: @escaping () -> Void, label: () -> Label)`
   - `size`: tappable size
   - `persistKey`: persistence key for button position
   - `defaultPosition`: initial position when no saved data exists
   - `onTap`: tap callback
 
-- `WKFloatingWindow` (`WKWindow` is an alias)
+- `WKFloatingWindow`
   - `init(title: String, isPresented: Binding<Bool>, persistKey: String? = nil, minSize: CGSize = (200,200), defaultSize: CGSize = (400,400), style: FloatingWindowStyle? = nil, actions: () -> Actions, content: () -> Content)`
   - `init(title: String, isPresented: Binding<Bool>, persistKey: String? = nil, minSize: CGSize = (200,200), defaultSize: CGSize = (400,400), style: FloatingWindowStyle? = nil, content: () -> Content)` (without actions)
   - `title`: title bar text
@@ -100,7 +100,7 @@ struct Main: View {
   - `style`: optional custom `FloatingWindowStyle`
   - `actions`: custom controls shown on the right side of title bar
 
-- `WKFloatingOverlay` (`WKOverlay` is an alias)
+- `WKFloatingOverlay`
   - `init(persistKey: String? = nil, defaultPosition: CGPoint = CGPoint(x: 120, y: 120), content: () -> Content)`
   - `persistKey`: persistence key for overlay position
   - `defaultPosition`: initial position

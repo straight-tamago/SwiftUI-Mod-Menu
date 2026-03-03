@@ -23,15 +23,14 @@ $(TWEAK_NAME)_FRAMEWORKS += UIKit Foundation SwiftUI IOKit
 $(TWEAK_NAME)_FILES += \
 	libs/internal_do_not_delete/main.mm \
 	libs/internal_do_not_delete/c/wkbridge/wk_settings_bridge.xm \
-	libs/internal_do_not_delete/swift/windowkit/FloatingButton.swift \
-	libs/internal_do_not_delete/swift/windowkit/WKAliases.swift \
+	libs/internal_do_not_delete/swift/windowkit/WKFloatingButton.swift \
 	libs/internal_do_not_delete/swift/windowkit/WKStack.swift \
 	libs/internal_do_not_delete/swift/windowkit/WKControls.swift \
 	libs/internal_do_not_delete/swift/windowkit/WKText.swift \
 	libs/internal_do_not_delete/swift/windowkit/WKSettingsStore.swift \
-	libs/internal_do_not_delete/swift/windowkit/FloatingOverlay.swift \
+	libs/internal_do_not_delete/swift/windowkit/WKFloatingOverlay.swift \
 	libs/internal_do_not_delete/swift/windowkit/WKTheme.swift \
-	libs/internal_do_not_delete/swift/windowkit/FloatingWindow.swift \
+	libs/internal_do_not_delete/swift/windowkit/WKFloatingWindow.swift \
 	libs/internal_do_not_delete/swift/windowkit/PassThroughView.swift \
 	libs/internal_do_not_delete/swift/windowkit/ResizeHandle.swift \
 	libs/internal_do_not_delete/swift/windowkit/WKPersistence.swift \

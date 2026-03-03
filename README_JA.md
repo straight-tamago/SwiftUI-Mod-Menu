@@ -86,14 +86,14 @@ struct Main: View {
 
 ### フローティングUI
 
-- `WKFloatingButton` (`WKButton` は同義alias)
+- `WKFloatingButton`
   - `init(size: CGFloat = 50, persistKey: String? = nil, defaultPosition: CGPoint? = nil, onTap: @escaping () -> Void, label: () -> Label)`
   - `size`: タップ領域サイズ
   - `persistKey`: 位置保存キー
   - `defaultPosition`: 保存がない場合の初期位置
   - `onTap`: タップ時処理
 
-- `WKFloatingWindow` (`WKWindow` は同義alias)
+- `WKFloatingWindow`
   - `init(title: String, isPresented: Binding<Bool>, persistKey: String? = nil, minSize: CGSize = (200,200), defaultSize: CGSize = (400,400), style: FloatingWindowStyle? = nil, actions: () -> Actions, content: () -> Content)`
   - `init(title: String, isPresented: Binding<Bool>, persistKey: String? = nil, minSize: CGSize = (200,200), defaultSize: CGSize = (400,400), style: FloatingWindowStyle? = nil, content: () -> Content)`（actions省略版）
   - `title`: タイトルバー表示文字
@@ -103,7 +103,7 @@ struct Main: View {
   - `style`: `FloatingWindowStyle` で見た目差し替え
   - `actions`: タイトルバー右側の追加ボタン群
 
-- `WKFloatingOverlay` (`WKOverlay` は同義alias)
+- `WKFloatingOverlay`
   - `init(persistKey: String? = nil, defaultPosition: CGPoint = CGPoint(x: 120, y: 120), content: () -> Content)`
   - `persistKey`: 位置保存キー
   - `defaultPosition`: 初期位置
