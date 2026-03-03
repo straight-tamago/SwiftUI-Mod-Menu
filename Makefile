@@ -24,7 +24,7 @@ $(TWEAK_NAME)_FILES += \
 	libs/internal_do_not_delete/main.mm \
 	libs/internal_do_not_delete/c/wkbridge/wk_settings_bridge.xm \
 	libs/internal_do_not_delete/swift/windowkit/WKFloatingButton.swift \
-	libs/internal_do_not_delete/swift/windowkit/WKStack.swift \
+	libs/internal_do_not_delete/swift/windowkit/WKRoot.swift \
 	libs/internal_do_not_delete/swift/windowkit/WKControls.swift \
 	libs/internal_do_not_delete/swift/windowkit/WKText.swift \
 	libs/internal_do_not_delete/swift/windowkit/WKSettingsStore.swift \

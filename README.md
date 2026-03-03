@@ -67,7 +67,7 @@ struct Main: View {
 
 ### Root / Theme
 
-- `WKRoot` (`WKStack` is an alias)
+- `WKRoot`
   - `init(theme: Binding<WKTheme>? = nil, initialTheme: WKTheme = .dark, fontName: String? = nil, content: () -> Content)`
   - `init(theme: Binding<WKTheme>? = nil, initialTheme: WKTheme = .dark, fontName: String? = nil, content: (WKTheme) -> Content)`
   - `theme`: externally controlled theme binding

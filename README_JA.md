@@ -70,7 +70,7 @@ struct Main: View {
 
 ### ルート / テーマ
 
-- `WKRoot` (`WKStack` は同義alias)
+- `WKRoot`
   - `init(theme: Binding<WKTheme>? = nil, initialTheme: WKTheme = .dark, fontName: String? = nil, content: () -> Content)`
   - `init(theme: Binding<WKTheme>? = nil, initialTheme: WKTheme = .dark, fontName: String? = nil, content: (WKTheme) -> Content)`
   - `theme`: 外部からテーマ制御したい場合に使用
