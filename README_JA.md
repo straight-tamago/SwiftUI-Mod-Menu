@@ -240,6 +240,35 @@ struct Main: View {
   - 必要に応じて `@_cdecl("SymbolName")` を使用
   - もしくは `Loader.setup()` のように ObjC公開クラス経由で呼び出し
 
+### Cから設定値を読み出す
+
+設定値は C で読み出せます。以下のヘルパー関数を使います:
+
+- `bool WKReadBool(const char *key, bool fallback);`
+- `int WKReadInt(const char *key, int fallback);`
+- `double WKReadDouble(const char *key, double fallback);`
+- `const char *WKReadStringOrDefault(const char *key, const char *fallback);`
+
+例（Objective-C++ / .xm）:
+
+```cpp
+bool IsInvincibleEnabled(void) {
+  bool enabled = WKReadBool("invincible_enabled", false);
+  return enabled;
+}
+
+void LoadSettings(void) {
+  int maxTargets = WKReadInt("maxTargets", 3);
+  double sens = WKReadDouble("sensitivity", 0.5);
+  const char *tag_c = WKReadStringOrDefault("playerTag", "Player01");
+  NSString *playerTag = [NSString stringWithUTF8String:tag_c];
+  NSLog(@"maxTargets=%d sens=%f tag=%@", maxTargets, sens, playerTag);
+}
+```
+
+注意: `WKReadString*` 系は `const char *` を返します。
+値の書き込みには `WKWriteBool`, `WKWriteInt`, `WKWriteDouble`, `WKWriteString` を使います。
+
 ---
 
 ## ビルド
